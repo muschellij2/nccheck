@@ -32,12 +32,12 @@ matrix:
 
 script:
   - neuro_user() {
-      str="neuroc.deps::neuroc_user(dev=${dev}, deployment=${deployment})"
-      Rscript -e "${str}"
+      str="neuroc.deps::neuroc_user(dev=${dev}, deployment=${deployment})";
+      Rscript -e "${str}";
     }
   - use_neuroc_template() {
-      str="neuroc.deps::use_neuroc_template(dev=${dev}, deployment=${deployment})"
-      Rscript -e "${str}"
+      str="neuroc.deps::use_neuroc_template(dev=${dev}, deployment=${deployment})";
+      Rscript -e "${str}";
     }
   - run_neuroc() {
     git clone https://github.com/${1} temp;
@@ -46,7 +46,7 @@ script:
     cat DESCRIPTION;
     echo "\n" ;
     cat .travis.yml ;
-    cd ..; rm -rf temp
+    cd ..; rm -rf temp ;
     }
   - run_neuroc muschellij2/gifti
   - run_neuroc muschellij2/neurobase
