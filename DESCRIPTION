@@ -12,7 +12,8 @@ Encoding: UTF-8
 LazyData: true
 Imports: 
     neuroc.deps,
-    remotes
+    remotes,
+    base64enc
 URL: https://github.com/muschellij2/neuroconductor-backend
 BugReports: https://github.com/muschellij2/neuroconductor-backend/issues
 Remotes:
