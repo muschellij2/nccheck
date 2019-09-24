@@ -13,5 +13,7 @@ LazyData: true
 Imports: 
     neuroc.deps,
     remotes
-URL: https://github.com/muschellij2/nccheck
-BugReports: https://github.com/muschellij2/nccheck/issues
+URL: https://github.com/muschellij2/neuroconductor-backend
+BugReports: https://github.com/muschellij2/neuroconductor-backend/issues
+Remotes:
+    muschellij2/neuroc.deps
