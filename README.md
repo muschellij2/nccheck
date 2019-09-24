@@ -6,5 +6,5 @@
 <!-- badges: start -->
 
 [![Travis build
-status](https://travis-ci.org/muschellij2/releases-info.svg?branch=master)](https://travis-ci.org/muschellij2/releases-info)
+status](https://travis-ci.com/muschellij2/neuroconductor-backend.svg?branch=master)](https://travis-ci.com/muschellij2/neuroconductor-backend)
 <!-- badges: end -->
