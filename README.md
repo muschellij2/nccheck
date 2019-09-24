@@ -6,5 +6,5 @@
 <!-- badges: start -->
 
 [![Travis build
-status](https://travis-ci.com/muschellij2/neuroconductor-backend.svg?branch=master)](https://travis-ci.com/muschellij2/neuroconductor-backend)
+status](https://travis-ci.com/muschellij2/nccheck.svg?branch=master)](https://travis-ci.com/muschellij2/nccheck)
 <!-- badges: end -->
