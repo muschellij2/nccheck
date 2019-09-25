@@ -10,36 +10,43 @@ matrix:
       - dev=FALSE
       - deployment=FALSE
       - NEUROC_TRAVIS_KEY=asdf
+      - NEUROC_APPVEYOR_KEY=asdf
   - env: 
       - PACKAGE_NAME=neuroconductor-devel
       - dev=TRUE  
       - deployment=FALSE
       - NEUROC_DEVEL_TRAVIS_KEY=asdf   
+      - NEUROC_DEVEL_APPVEYOR_KEY=asdf
   - env: 
       - PACKAGE_NAME=neuroconductor-devel-releases
       - dev=TRUE  
       - deployment=TRUE  
       - NEUROC_DEVEL_RELEASE_TRAVIS_KEY=asdf      
+      - NEUROC_DEVEL_RELEASE_APPVEYOR_KEY=asdf
   - env: 
       - PACKAGE_NAME=oslerinhealth
       - dev=FALSE
       - deployment=FALSE
-      - OSLER_TRAVIS_KEY=asdf      
+      - OSLER_TRAVIS_KEY=asdf     
+      - OSLER_APPVEYOR_KEY=asdf       
   - env: 
       - PACKAGE_NAME=neuroconductor
       - dev=FALSE
       - deployment=FALSE
       - NEUROC_TRAVIS_KEY=
+      - NEUROC_APPVEYOR_KEY=
   - env: 
       - PACKAGE_NAME=neuroconductor-devel
       - dev=TRUE  
       - deployment=FALSE
       - NEUROC_DEVEL_TRAVIS_KEY=         
+      - NEUROC_DEVEL_APPVEYOR_KEY=
   - env: 
       - PACKAGE_NAME=oslerinhealth
       - dev=FALSE
       - deployment=FALSE
       - OSLER_TRAVIS_KEY=
+      - OSLER_APPVEYOR_KEY=
   # - env: 
   #     - PACKAGE_NAME=oslerinhealth-devel
   #     - dev=TRUE  
@@ -54,16 +61,19 @@ matrix:
       - dev=FALSE
       - deployment=FALSE
       - OSLER_TRAVIS_KEY=
+      - OSLER_APPVEYOR_KEY=
     - env: 
       - PACKAGE_NAME=neuroconductor
       - dev=FALSE
       - deployment=FALSE
       - NEUROC_TRAVIS_KEY=  
+      - NEUROC_APPVEYOR_KEY=  
     - env: 
-      - PACKAGE_NAME=neuroconductor
-      - dev=FALSE
+      - PACKAGE_NAME=neuroconductor-devel
+      - dev=TRUE
       - deployment=FALSE
-      - NEUROC_TRAVIS_KEY=         
+      - NEUROC_DEVEL_TRAVIS_KEY=         
+      - NEUROC_DEVEL_APPVEYOR_KEY=         
 
 script:
   - export error_opt="options(error=function() {q(status=1)}) "
