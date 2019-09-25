@@ -35,31 +35,25 @@ script:
   - neuro_user() {
       str="${error_opt}; neuroc.deps::neuroc_user(dev=${dev}, deployment=${deployment})";
       Rscript -e "${str}";
-      if [[ "$?" != "0" ]]; then 
-        exit 1 ;
-      fi 
+      if [[ "$?" != "0" ]]; then exit 1 ; fi ;
     }
   - use_neuroc_template() {
       str="${error_opt}; neuroc.deps::use_neuroc_template(dev=${dev}, deployment=${deployment})";
       Rscript -e "${str}";
-      if [[ "$?" != "0" ]]; then 
-        exit 1 ;
-      fi 
+      if [[ "$?" != "0" ]]; then exit 1 ; fi ;
     }
   - run_neuroc() {
       git clone https://github.com/${1} temp;
       cd temp ;
       use_neuroc_template ;
-      if [[ "$?" != "0" ]]; then 
-        exit 1 ;
-      fi       
+      if [[ "$?" != "0" ]]; then exit 1 ; fi ;      
       cat DESCRIPTION;
       echo "\n" ;
       cat .travis.yml ;
       cd ..; rm -rf temp ;
     }
-  - run_neuroc muschellij2/gifti
-  - run_neuroc muschellij2/neurobase
-  - run_neuroc muschellij2/ANTsRCore
-  - run_neuroc muschellij2/extrantsr
+  - run_neuroc muschellij2/gifti ;
+  - run_neuroc muschellij2/neurobase ;
+  - run_neuroc muschellij2/ANTsRCore ;
+  - run_neuroc muschellij2/extrantsr ;
 
